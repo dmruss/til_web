@@ -1,0 +1,119 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+#app {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Add Sentence Section */
+#add-sentence {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f9f9fb;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#add-sentence h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #555;
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Sentence List Section */
+#sentences-list,
+#sample-sentences-list {
+  margin-top: 20px;
+}
+
+#sentences-list h2,
+#sample-sentences-list h2 {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Sentence Card Styling */
+.sentence-card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s;
+}
+
+.sentence-card:hover {
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+.sentence-datetime {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.sentence-text {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.sentence-keywords {
+  font-size: 14px;
+  color: #007bff;
+  font-weight: 500;
+}

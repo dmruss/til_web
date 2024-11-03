@@ -1,18 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>SPA SDK Sample</title>
-    <link rel="stylesheet" type="text/css" href="./public/css/main.css" />
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Today I Learned</title>
+  <link rel="stylesheet" href="./public/css/styles.css" />
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js"></script>
+  <!-- <script src="./public/scripts/auth.js" defer></script> -->
+  <script src="./public/scripts/app.js" defer></script>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Today I Learned</h1>
+      <button onclick="logout()">Log Out</button>
+    </header>
 
-  <body>
-    <h2>SPA Authentication Sample</h2>
-    <p>Welcome to our page!</p>
-    <button id="btn-login" disabled="true" onclick="login()">Log in</button>
-    <button id="btn-logout" disabled="true" onclick="logout()">Log out</button>
+    <section id="add-sentence">
+      <h2>Add a Sentence</h2>
+      <input type="text" id="sentence" placeholder="What did you learn today?" />
+      <input type="text" id="keywords" placeholder="Keywords (comma-separated)" />
+      <button onclick="addSentence()">Save</button>
+    </section>
 
-    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
-    <script src="./public/js/app.js"></script>
-  </body>
+    <section id="sentences-list">
+      <h2>Your Sentences</h2>
+      <ul id="user-sentences"></ul>
+    </section>
+
+    <section id="sample-sentences-list">
+      <h2>Sample Sentences</h2>
+      <ul id="sample-sentences"></ul>
+    </section>
+  </div>
+</body>
 </html>
